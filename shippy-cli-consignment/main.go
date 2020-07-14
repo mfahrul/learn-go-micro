@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	pb "/media/fahrul/Data/LEARN/MICROSERVICEGO/shippy-service-consignment/proto/consignment"
+	pb "github.com/mfahrul/learn-go-micro/shippy-service-consignment/proto/consignment"
 
 	micro "github.com/micro/go-micro/v2"
 )

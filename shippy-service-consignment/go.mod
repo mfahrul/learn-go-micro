@@ -1,4 +1,4 @@
-module shippy.service.consignment
+module github.com/mfahrul/learn-go-micro/shippy-service-consignment
 
 go 1.14
 
