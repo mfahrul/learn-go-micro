@@ -271,6 +271,8 @@ github.com/matttproud/golang_protobuf_extensions v1.0.1 h1:4hp9jkHxhMHkqkrB3Ix0j
 github.com/matttproud/golang_protobuf_extensions v1.0.1/go.mod h1:D8He9yQNgCq6Z5Ld7szi9bcBfOoFv/3dc6xSMkL2PC0=
 github.com/mfahrul/learn-go-micro/shippy-service-consignment v0.0.0-20200714172552-1ba8dd8125af h1:+3nRlBKoIl8r3ToSXBVbJO/JQvjDqtm6zqd2Gi0lrw8=
 github.com/mfahrul/learn-go-micro/shippy-service-consignment v0.0.0-20200714172552-1ba8dd8125af/go.mod h1:BNYQwfm6lHsdXXpQJcr6/SDlMnUrrjO+dO3d7B4W/bQ=
+github.com/mfahrul/learn-go-micro/shippy-service-consignment v0.0.0-20200725102548-fce9b45454d5 h1:vDw1C1JXhQID3J3eapX5jNKy5HS2rDlFpja7OmTDrJs=
+github.com/mfahrul/learn-go-micro/shippy-service-consignment v0.0.0-20200725102548-fce9b45454d5/go.mod h1:BNYQwfm6lHsdXXpQJcr6/SDlMnUrrjO+dO3d7B4W/bQ=
 github.com/micro/cli/v2 v2.1.2 h1:43J1lChg/rZCC1rvdqZNFSQDrGT7qfMrtp6/ztpIkEM=
 github.com/micro/cli/v2 v2.1.2/go.mod h1:EguNh6DAoWKm9nmk+k/Rg0H3lQnDxqzu5x5srOtGtYg=
 github.com/micro/go-micro/v2 v2.9.1 h1:+S9koIrNWARjpP6k2TZ7kt0uC9zUJtNXzIdZTZRms7Q=
