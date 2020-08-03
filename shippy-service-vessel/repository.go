@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 
 	pb "github.com/mfahrul/learn-go-micro/shippy-service-vessel/proto/vessel"
 	"go.mongodb.org/mongo-driver/bson"
@@ -78,22 +79,14 @@ type Vessel struct {
 // if capacity and max weight are below a vessels capacity and max weight,
 // then return that vessel.
 func (repository *MongoRepository) FindAvailable(ctx context.Context, spec *Specification) (*Vessel, error) {
-	filter := bson.D{
-		{
-			Key: "capacity",
-			Value: bson.D{
-				{
-					Key:   "$lte",
-					Value: spec.Capacity,
-				}, {
-					Key:   "$lte",
-					Value: spec.MaxWeight,
-				},
-			},
-		},
+	filter := bson.M{
+		"capacity":  bson.M{"$gte": spec.Capacity},
+		"maxweight": bson.M{"$gte": spec.MaxWeight},
 	}
+	fmt.Println(filter)
 	vessel := &Vessel{}
 	if err := repository.collection.FindOne(ctx, filter).Decode(vessel); err != nil {
+		fmt.Println(err)
 		return nil, err
 	}
 	return vessel, nil

@@ -25,12 +25,12 @@ func (s *handler) CreateConsignment(ctx context.Context, req *pb.Consignment, re
 		MaxWeight: req.Weight,
 		Capacity:  int32(len(req.Containers)),
 	})
-	if err != nil {
-		return err
-	}
-
 	if vesselResponse == nil {
 		return errors.New("error fetching vessel, returned nil")
+	}
+
+	if err != nil {
+		return err
 	}
 
 	// We set the VesselId as the vessel we got back from our
